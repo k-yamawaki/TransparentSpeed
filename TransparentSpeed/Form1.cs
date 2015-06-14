@@ -1,22 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.IO;
 
 namespace TransparentSpeed
 {
     public partial class Form1 : Form
     {
-        /// <summary>
-        /// 背景画像
-        /// </summary>
-        private static readonly string imgPath = @"transparent.png";
-
         /// <summary>
         /// 描画回数
         /// </summary>
@@ -47,19 +36,6 @@ namespace TransparentSpeed
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (this.DesignMode)
-            {
-                return;
-            }
-
-            if (string.IsNullOrEmpty(this.textBoxFile.Text) == false)
-            {
-                Bitmap bkImg = new Bitmap(this.textBoxFile.Text);
-                this.buttonTransparent.BackgroundImage = bkImg;
-                this.buttonNotTransparent.BackgroundImage = bkImg;
-                this.buttonTransparent.Text = "";
-                this.buttonNotTransparent.Text = "";
-            }
         }
 
         /// <summary>
@@ -145,6 +121,22 @@ namespace TransparentSpeed
             this.buttonTransparent.ClearPaintTime();
             this.buttonNotTransparent.ClearPaintTime();
             this.DoubleBuffered = this.checkBoxDoubleBuffer.Checked;
+
+            // 画像の設定
+            if (string.IsNullOrEmpty(this.textBoxFile.Text))
+            {
+                this.buttonTransparent.Text = "No Image";
+                this.buttonNotTransparent.Text = "No Image";
+            }
+            else
+            {
+                Bitmap bkImg = new Bitmap(this.textBoxFile.Text);
+                this.buttonTransparent.BackgroundImage = bkImg;
+                this.buttonNotTransparent.BackgroundImage = bkImg;
+                this.buttonTransparent.Text = "";
+                this.buttonNotTransparent.Text = "";
+            }
+
             this.timerPaint.Start();
         }
 

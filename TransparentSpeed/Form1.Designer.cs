@@ -40,10 +40,10 @@
             this.labelPaintCount = new System.Windows.Forms.Label();
             this.checkBoxEachInvalidate = new System.Windows.Forms.CheckBox();
             this.checkBoxDoubleBuffer = new System.Windows.Forms.CheckBox();
-            this.buttonNotTransparent = new TransparentSpeed.ButtonEx();
-            this.buttonTransparent = new TransparentSpeed.ButtonEx();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxFile = new System.Windows.Forms.TextBox();
+            this.buttonNotTransparent = new TransparentSpeed.ButtonEx();
+            this.buttonTransparent = new TransparentSpeed.ButtonEx();
             this.SuspendLayout();
             // 
             // buttonStart
@@ -62,9 +62,9 @@
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.Size = new System.Drawing.Size(123, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "背景色：透過";
+            this.label1.Text = "背景色：Transparent";
             // 
             // label2
             // 
@@ -72,9 +72,9 @@
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.Location = new System.Drawing.Point(12, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 12);
+            this.label2.Size = new System.Drawing.Size(95, 12);
             this.label2.TabIndex = 1;
-            this.label2.Text = "背景色：非透過";
+            this.label2.Text = "背景色：Control";
             // 
             // labelTransparentPaintTime
             // 
@@ -147,27 +147,6 @@
             this.checkBoxDoubleBuffer.Text = "ダブルバッファ";
             this.checkBoxDoubleBuffer.UseVisualStyleBackColor = true;
             // 
-            // buttonNotTransparent
-            // 
-            this.buttonNotTransparent.Location = new System.Drawing.Point(12, 256);
-            this.buttonNotTransparent.Name = "buttonNotTransparent";
-            this.buttonNotTransparent.PaintTime = System.TimeSpan.Parse("00:00:00.1900120");
-            this.buttonNotTransparent.Size = new System.Drawing.Size(400, 200);
-            this.buttonNotTransparent.TabIndex = 0;
-            this.buttonNotTransparent.Text = "buttonNotTransparet";
-            this.buttonNotTransparent.UseVisualStyleBackColor = true;
-            // 
-            // buttonTransparent
-            // 
-            this.buttonTransparent.BackColor = System.Drawing.Color.Transparent;
-            this.buttonTransparent.Location = new System.Drawing.Point(12, 24);
-            this.buttonTransparent.Name = "buttonTransparent";
-            this.buttonTransparent.PaintTime = System.TimeSpan.Parse("00:00:00.2900152");
-            this.buttonTransparent.Size = new System.Drawing.Size(400, 200);
-            this.buttonTransparent.TabIndex = 0;
-            this.buttonTransparent.Text = "buttonTransparent";
-            this.buttonTransparent.UseVisualStyleBackColor = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -183,6 +162,29 @@
             this.textBoxFile.Name = "textBoxFile";
             this.textBoxFile.Size = new System.Drawing.Size(329, 19);
             this.textBoxFile.TabIndex = 6;
+            // 
+            // buttonNotTransparent
+            // 
+            this.buttonNotTransparent.Font = new System.Drawing.Font("メイリオ", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.buttonNotTransparent.Location = new System.Drawing.Point(12, 256);
+            this.buttonNotTransparent.Name = "buttonNotTransparent";
+            this.buttonNotTransparent.PaintTime = System.TimeSpan.Parse("00:00:00.2120132");
+            this.buttonNotTransparent.Size = new System.Drawing.Size(400, 200);
+            this.buttonNotTransparent.TabIndex = 0;
+            this.buttonNotTransparent.Text = "No Image";
+            this.buttonNotTransparent.UseVisualStyleBackColor = true;
+            // 
+            // buttonTransparent
+            // 
+            this.buttonTransparent.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTransparent.Font = new System.Drawing.Font("メイリオ", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.buttonTransparent.Location = new System.Drawing.Point(12, 24);
+            this.buttonTransparent.Name = "buttonTransparent";
+            this.buttonTransparent.PaintTime = System.TimeSpan.Parse("00:00:00.3110164");
+            this.buttonTransparent.Size = new System.Drawing.Size(400, 200);
+            this.buttonTransparent.TabIndex = 0;
+            this.buttonTransparent.Text = "No Image";
+            this.buttonTransparent.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
