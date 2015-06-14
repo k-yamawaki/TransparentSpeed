@@ -1,0 +1,2 @@
+# TransparentSpeed
+背景透過コントロールの描画速度を計測します
